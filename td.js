@@ -8,5 +8,5 @@ db.sports.insertOne({ object: "ballon", nbPlayer: 11, coach: "Mr Parkinson", tou
 
 db.sports.updateMany({}, { $set: { requiredTeam: true, title: "football" } })
 
-
+db.sports.insertMany([{ object: "ballon", nbPlayer: 8, coach: "Polnareff", tournoi: false }, { object: "raquette", nbPlayer: 2, coach: "Pique", tournoi: false }])
 
